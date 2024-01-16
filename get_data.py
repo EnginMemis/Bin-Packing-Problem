@@ -5,9 +5,7 @@ def readFile():
     rectangles = []
     dosya_yolu = "Data/C7_3"
     try:
-        # Dosyayı açın ve okuma modunda (r) açın
         with open(dosya_yolu, 'r') as dosya:
-            # Dosyayı okuyun
             data = dosya.readlines()
             for i in range(len(data)):
                 data[i] = data[i].split('\n')[0]
