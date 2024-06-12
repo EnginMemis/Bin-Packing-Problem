@@ -15,7 +15,7 @@ class GA():
         self.mutate_rate = 0.3
         self.mutate_size = 0.1
         self.elite_size = 5
-
+        
     def getIndex(self, poly_list):
         index_list = []
         for rect in poly_list:
@@ -53,7 +53,6 @@ class GA():
         child = child1 + child2
         return child
         
-
     def genetic_algorithm(self):
         self.highest_density = 0.0
         self.highest_pop = []
